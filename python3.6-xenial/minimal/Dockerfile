@@ -1,7 +1,7 @@
 #
-# NOTE: THIS DOCKERFILE IS GENERATED VIA "update.sh"
+# NOTE: THIS DOCKERFILE IS GENERATED MANUALLY
 #
-# PLEASE DO NOT EDIT IT DIRECTLY.
+# FEEL FREE TO EDIT IT.
 #
 
 FROM ubuntu:16.04
@@ -81,6 +81,6 @@ RUN set -ex; \
     rm -f get-pip.py
 
 # clean
-RUN apt-get purge -y --auto-remove wget
+RUN apt-get purge -y --auto-remove wget build-essential
 
 CMD ["python3"]
